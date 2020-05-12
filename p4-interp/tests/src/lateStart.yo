@@ -1,0 +1,21 @@
+  0x000:                      | .pos 0 code
+  0x000: 700003000000000000   |     jmp _start
+                              | 
+                              | 
+  0x100:                      | .pos 0x100 code
+  0x100:                      | bar:
+  0x100: 90                   |     ret
+                              | 
+  0x200:                      | .pos 0x200 code
+  0x200:                      | foo:
+  0x200: 800001000000000000   |     call bar
+  0x209: 90                   |     ret
+                              | 
+  0x300:                      | .pos 0x300 code
+  0x300:                      | _start:
+  0x300: 30f4000f000000000000 |     irmovq _stack, %rsp
+  0x30a: 800002000000000000   |     call foo
+  0x313: 00                   |     halt
+                              | 
+  0xf00:                      | .pos 0xf00 stack
+  0xf00:                      | _stack:

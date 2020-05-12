@@ -1,0 +1,28 @@
+==48445== Memcheck, a memory error detector
+==48445== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==48445== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==48445== Command: ../y86 -d inputs/twobyte.o
+==48445== 
+Disassembly of executable contents:
+  0x100:                      | .pos 0x100 code
+  0x100:                      | _start:
+  0x100: 2001                 |   rrmovq %rax, %rcx
+  0x102: 6023                 |   addq %rdx, %rbx
+  0x104: a06f                 |   pushq %rsi
+  0x106: b07f                 |   popq %rdi
+
+==48445== 
+==48445== HEAP SUMMARY:
+==48445==     in use at exit: 552 bytes in 1 blocks
+==48445==   total heap usage: 4 allocs, 3 frees, 21,032 bytes allocated
+==48445== 
+==48445== LEAK SUMMARY:
+==48445==    definitely lost: 0 bytes in 0 blocks
+==48445==    indirectly lost: 0 bytes in 0 blocks
+==48445==      possibly lost: 0 bytes in 0 blocks
+==48445==    still reachable: 552 bytes in 1 blocks
+==48445==         suppressed: 0 bytes in 0 blocks
+==48445== Rerun with --leak-check=full to see details of leaked memory
+==48445== 
+==48445== For counts of detected and suppressed errors, rerun with: -v
+==48445== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

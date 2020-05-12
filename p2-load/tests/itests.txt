@@ -1,0 +1,18 @@
+C_help                         pass
+C_simple_H                     pass
+C_simple_s                     pass
+C_multiseg_sH                  pass
+C_multiseg_f                   pass
+C_stripped_sM                  pass
+B_stripped_m                   pass
+B_stripped_mH                  pass
+B_all_flags                    pass
+B_repeated                     pass
+B_stack                        pass
+A_brief_full                   pass
+A_bad_phdr_vaddr               pass
+A_bad_phdr_short               pass
+A_bad_phdr_magic               pass
+A_no_flags                     pass
+A_no_flags_bad                 pass
+No memory leak found.

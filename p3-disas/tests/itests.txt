@@ -1,0 +1,24 @@
+D_onebyte                      pass
+C_help                         pass
+C_twobyte                      pass
+C_cmov                         pass
+C_opq                          pass
+B_ninebyte                     pass
+B_jmp                          pass
+B_tenbyte                      pass
+B_simple                       pass
+B_simple_multi                 pass
+A_data_code                    pass
+A_rodata_code                  pass
+A_data                         pass
+A_rodata                       pass
+A_rodata_multi                 pass
+A_rodata_long                  pass
+A_invalid                      pass
+A_bad_no_elf                   pass
+A_bad_phdr                     pass
+A_bad_short_header             pass
+A_bad_short_phdr               pass
+A_bad_filename                 pass
+C_r8                           pass
+No memory leak found.
